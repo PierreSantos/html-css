@@ -24,6 +24,7 @@ body{
 header{
     background-image: linear-gradient(to top, #1a5c38, #3cdc84);
     margin: 0px;
+    min-height: 150px;
     padding: 40px 10px 10px 10px;
     text-align: center;
     color: white;
@@ -63,8 +64,8 @@ header > nav >a:hover{
 
 main{
     background-color: white;
-    min-width: 400px;
-    max-width: 850px;
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -73,6 +74,10 @@ main{
     text-align: center;
     text-indent: 30px;
     border-radius: 0px 0px 10px 10px;
+}
+
+main img{
+    width: 100%;
 }
 
 main p{
@@ -156,13 +161,8 @@ p.paragrafo{
 
 footer{
     background-color: #1a5c38;
-    text-align: center;
-    padding: 1px;
-}
-
-footer >p{
+    padding: 5px;
     text-align: center;
     color: white;
     font-weight: normal;
-    padding: 10px;
 }
