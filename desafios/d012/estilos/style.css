@@ -17,6 +17,7 @@
 header{
     background-color: black;
     padding: 30px;
+    margin: auto;
 }
 
 header > h1{
@@ -47,11 +48,32 @@ header > h2 a:hover{
 
 main{
     background-color: white;
+
 }
 
 main p{
     font: normal normal 47px var(--fonte-cordel);
     text-align: left;
+}
+
+div.imagemdefundo{
+    background: transparent center center no-repeat fixed;
+    background-size: cover;
+    padding: 40px;
+}
+
+div.imagemdefundo p{
+    background-color: #0000007c;
+    color: white;
+    max-width: 700px;
+}
+
+div#f1{
+    background-image: url(../imagens/background001.jpg);
+}
+
+div#f2{
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer{
