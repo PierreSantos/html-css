@@ -17,17 +17,14 @@
 header{
     background-color: black;
     padding: 30px;
-    margin: auto;
 }
 
 header > h1{
-    font: normal bold 126px var(--font-titulos) ;
+    font-family: var(--font-titulos);
+    font-size: 12vw;
+    font-variant: small-caps;
     color: white;
     text-align: center;
-}
-
-header > h1::first-letter{
-    font-size: 1.5em;
 }
 
 header > h2{
@@ -52,8 +49,7 @@ main{
 }
 
 main p{
-    font: normal normal 47px var(--fonte-cordel);
-    text-align: left;
+    font: normal normal 3.5vw var(--fonte-cordel);
 }
 
 div.imagemdefundo{
@@ -63,9 +59,10 @@ div.imagemdefundo{
 }
 
 div.imagemdefundo p{
+    display: inline-block;
     background-color: #0000007c;
     color: white;
-    max-width: 700px;
+    padding: 10px;
 }
 
 div#f1{
