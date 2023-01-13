@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        body{
+        body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        table{
+        table {
             width: 500px;
             border-collapse: collapse;
         }
 
-        td, th{
+        caption {
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead, tfoot{
+        thead, tfoot {
             background-color: gray;
             color: white;
         }
-        
-        td.pos{
+
+        td.pos {
             text-align: center;
         }
 
-        td.num{
+        td.num {
             text-align: right;
         }
+
     </style>
 </head>
+
 <body>
-    <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,11 +56,12 @@
     -->
 
     <table>
+        <caption>Poulação dos estados brasileiros</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -149,7 +158,7 @@
             <tr>
                 <td class="pos">19º</td>
                 <td>Alagoas</td>
-                <td class="num">3 125 254</td>  
+                <td class="num">3 125 254</td>
             </tr>
             <tr>
                 <td class="pos">20º</td>
@@ -194,11 +203,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td>27 Estados</td>
                 <td class="num"><strong>214 345 125</strong></td>
             </tr>
         </tfoot>
     </table>
 </body>
+
 </html>
