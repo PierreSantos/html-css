@@ -2,12 +2,87 @@
 
 /* Diversas Medias */
 
-@media screen {
+/*
+    Typical device breakpoints
+    =================================
+    Telas pequenas: até 600px
+    Celular: 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Telas Grandes: acima de 1200px
+*/
+
+/* Versão para Impressora */
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    img#print {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
     
 }
 
-/* Versão para Impressora */
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
 
-@media print {
-    
+    main {
+        width: 500px;
+    }
+
+    img#tablet{ 
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#desktop { 
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
+}
+
+/* Telas Grandes (TV) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#tv { 
+        display: block;
+        margin: auto;
+    }
+
+    img#phone { display: none;}
 }
