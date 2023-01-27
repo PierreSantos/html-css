@@ -16,6 +16,7 @@
 @media print {
     body {
         background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
 
     }
 
